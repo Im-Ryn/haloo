@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Kadek Riyan</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="judul">
+            <h1>Halooo</h1>
+        </div>
+            <nav class="nav-list">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#Home">Home</a></li>
+                    <li class="nav-item"><a href="#About-me">About Me</a></li>
+                    <li class="nav-item"><a href="#education">Education</a></li>
+                    <li class="nav-item"><a href="#skill">Skill</a></li>
+                    <div id="closeButton">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                       </div>
+                </ul>
+                <div class="nav">
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+            </nav>
+    </header>
+
+    <main>
+        <div class="pembuka" id="Home">
+            <h1>Halo, saya Riyan</h1>
+            <p>Selamat datang di website ini, sepertinya anda gabut yah</p>
+        </div>
+
+        <div class="gradient1"></div>
+
+        <article id="about-me">
+            <div class="about-me">
+                <div class="about-me-desc">
+            <h2>About Me</h2>
+            <p>Halo, nama saya I Kadek Riyan Satria Wiguna, nama yang cukup panjang yah, tapi percayalah saya pernah bertemu orang dengan nama yang 1 kata tetapi gelarnya belasan, lupakan itu, kalian bisa memanggil saya Riyan, asal saya dari Bali tapi saya lahir di magetan, loh kok bisa, singkatnya orang tua saya TNI jadi saya lahir pada saat rantauan, saya lahir pada 28 Desember 2006, Hobi? bingung juga kalau ditanya hobi atau malah dibilang gaada hobi sih, saya suka sekali dengan dunia teknologi, dan yah website ini adalah bukti suka saya terhadap dunia teknologi, mungkin itu aja yang bakal saya bahas disini, silahkan scroll lagi.</p>
+                </div>
+                <div class="about-me-img">
+            <img src="assets/img/Computer.png" alt="Computer" width="280px">
+                </div>
+            </div>
+        </article>
+
+        <div class="gradient2"></div>
+
+        <article id="education">
+            <div class="education">
+                <div class="education-desc">
+                <h2>Education</h2>
+                <ol>
+                    <li>SDN Semplak 1 Kota Bogor</li>
+                    <li>SMPN 6 Kota Bogor</li>
+                    <li>SMAN 5 Kota Bogor(On Progress)</li>
+                    <li>???</li>
+                </ol>
+                <p>Jadi diatas ini adalah jenjang pendidikan yang saya jalani, saya masih SMA, harapannya saya ingin lanjut ke PTN impian saya yaitu ITS dengan jurusan Teknik Informatika, doakan saya teman-teman.</p>
+            </div>
+            <div class="education-img">
+                <img src="assets/img/Toga.png" alt="Toga" width="280px">
+            </div>
+            </div>
+        </article>
+
+        <div class="gradient1"></div>
+
+        <article id="skill">
+            <div class="skill">
+                <div class="skill-desc">
+                <h2>Skill</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript(On Progress)</li>
+                </ul>
+                <p>Lah cuma 2? ya saya masih SMA jadi wajar saja, tapi saya masih berusaha buat mengembangkan skill lebih jauh terutama di bidang teknologi</p>
+            </div>
+            <div class="skill-img">
+                <img src="assets/img/Coding.png" alt="Coding" width="280px">
+            </div>
+            </div>
+        </article>
+
+        <div class="gradient2"></div>
+
+        <aside>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        </aside>
+    </main>
+    <footer>
+        <p>Loh, udah beres? ya iya, kalau mau baca lagi silahkan sih, oiya kalian mau dibuatkan website seperti ini? kalian bisa DM IG saya atau kirim melalui Email saya, Terima Kasih!</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/f9ce132245.js" crossorigin="anonymous"></script>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+const closeButton = document.getElementById("closeButton")
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    closeButton.classList.toggle("active");
+})
+
+closeButton.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    closeButton.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-item").forEach(n => n.addEventListener("click", () => {
+    closeButton.classList.toggle("active")
+    navMenu.classList.toggle("active")
+    console.log("active")
+}))
+    </script>
+</body>
+</html>

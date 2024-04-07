@@ -1,0 +1,311 @@
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'open-sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #262C75;
+    padding: 20px;
+    width: 100%;
+}
+
+header .judul{
+    flex-grow: 2;
+    
+}
+
+header h1{
+    color: white;
+}
+
+header .nav-list{
+    flex-grow: 3;
+   background-color: #262C75;
+}
+
+header .nav-list ul{
+    display: flex;
+    justify-content: space-around;
+    background-color: #262C75;
+}
+
+header .nav-list ul li{
+    list-style-type: none;
+}
+
+header .nav-list ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#closeButton{
+    display: none;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.pembuka{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    color: white;
+    background-color: #5E80FF;
+    text-align: center;
+}
+
+article h2{
+    font-size: 3rem;
+}
+
+.about-me{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    background-color: #262C75;
+    color: white;
+    padding: 40px;
+    width: 100%;
+    height: 500px;
+}
+
+
+.about-me .about-me-img{
+    padding: 100px;
+}
+
+.education{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    background-color: #5E80FF;
+    color: white;
+    padding: 40px;
+    width: 100%;
+    height: 500px;
+}
+
+
+
+.education .education-desc ol{
+    padding: 20px;
+    padding-left: 40px;
+}
+
+.education .education-img{
+    padding: 100px;
+}
+
+.skill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    background-color: #262C75;
+    color: white;
+    padding: 40px;
+    width: 100%;
+    height: 500px;
+}
+
+
+.skill .skill-desc ul{
+    padding: 20px;
+    padding-left: 40px;
+}
+
+.skill .skill-img{
+    padding: 100px;
+}
+
+aside{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    background-color: #5E80FF;
+}
+
+aside i{
+    font-size: 50px;
+    color: white;
+}
+
+aside a .fa-instagram:hover{
+    color: #F56040;
+}
+aside a .fa-github:hover{
+    color: black;
+}
+aside a .fa-envelope:hover{
+    color: brown;
+}
+
+footer{
+    background-color: #5E80FF;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.gradient1{
+    background: rgb(38,44,117);
+    background: linear-gradient(0deg, rgba(38,44,117,1) 12%, rgba(94,128,255,1) 100%);
+    width: 100%;
+    height: 50px;
+}
+
+.gradient2{
+    background: rgb(94,128,255);
+    background: linear-gradient(0deg, rgba(94,128,255,1) 12%, rgba(38,44,117,1) 100%);
+    width: 100%;
+    height: 50px;
+}
+
+@media screen and (max-width:768px) {
+    .about-me{
+        flex-direction: column;
+        height: 700px;
+        justify-content: space-between;
+    }
+    .about-me-img img{
+        width: 180px;
+    }
+    .about-me-img{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 25px;
+    }
+    .about-me-desc{
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+
+
+    .education{
+        flex-direction: column;
+        height: 700px;
+    }
+    .education-img img{
+        width: 180px;
+    }
+    .education-img{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 25px;
+    }
+    .education-desc{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .skill{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 700px;
+    }
+    .skill-img img{
+        width: 180px;
+    }
+    .skill-img{
+        padding: 0;
+        /* position: relative;
+        bottom: 80px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 25px;
+    }
+    .skill-desc{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    #closeButton{
+        display: block;
+        cursor: pointer;
+    }
+
+    #closeButton.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    #closeButton.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #closeButton.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg)
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: 0;
+        top: -100%;
+        gap: 0; 
+        flex-direction: column;
+        background-color: #00a2c6;
+        z-index: 9999;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        top: 0;
+    }
+}
